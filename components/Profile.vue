@@ -8,7 +8,7 @@
                   size="100"
                   class="ma-2"
               >
-                <v-img src="~/assets/images/nuxt1.png" cover></v-img>
+                <v-img :src="Nuxt1" cover></v-img>
               </v-avatar>
         </div>
         <v-chip color="green-darken-2" class="mb-5" rounded="lg" variant="outlined">Early Access</v-chip>
