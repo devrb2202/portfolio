@@ -8,7 +8,7 @@
                   size="100"
                   class="ma-2"
               >
-                <v-img src="/Nuxt1.png" cover></v-img>
+                <v-img src="~/assets/images/nuxt1.png" cover></v-img>
               </v-avatar>
         </div>
         <v-chip color="green-darken-2" class="mb-5" rounded="lg" variant="outlined">Early Access</v-chip>
@@ -40,7 +40,7 @@
             size="100"
             class="mr-5"
           >
-            <v-img src="/gpt.png" cover></v-img>
+            <v-img :src="gpt" cover></v-img>
           </v-avatar>
           
             <p class="text-caption text-sm-subtitle-2 mb-6 text-justify">
@@ -70,15 +70,14 @@
     </v-row>
   </v-container>
 </template>
-<style scoped>
-
-.text {
-  display: block;
-}
-
-</style>
 
 <script setup lang="ts">
+import gpt from '/assets/images/gpt.png'
+import vuetify from '/assets/images/vuetify.png'
+import typescript from '/assets/images/typescript.png'
+import supabase from '/assets/images/supabase.png'
+import Nuxt1 from '/assets/images/Nuxt1.png'
+
 
 interface Button {
   to: string,
@@ -88,12 +87,7 @@ interface Button {
   title: string
 }
 
-const img = ref<string[]>([
-  '/nuxt1.png',
-  '/vuetify.png',
-  '/typescript.png',
-  '/supabase.png'
-])
+const img = ref<string[]>([ Nuxt1, vuetify, typescript, supabase ])
 
 const buttons = ref<Button[]>([
   {to: 'https://github.com/devrb2202', color: 'green', style: 'outlined', icon: 'mdi-github', title: 'Github'},
