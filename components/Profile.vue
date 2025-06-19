@@ -8,7 +8,7 @@
                   size="100"
                   class="ma-2"
               >
-                <v-img :src="Nuxt1" cover></v-img>
+                <v-img :src="nuxt" cover></v-img>
               </v-avatar>
         </div>
         <v-chip color="green-darken-2" class="mb-5" rounded="lg" variant="outlined">Early Access</v-chip>
@@ -72,7 +72,7 @@
 </template>
 
 <script setup lang="ts">
-import Nuxt1 from '@/assets/images/Nuxt1.png'
+import nuxt from '@/assets/images/nuxt.png'
 import gpt from '@/assets/images/gpt.png'
 import vuetify from '@/assets/images/vuetify.png'
 import typescript from '@/assets/images/typescript.png'
@@ -87,7 +87,7 @@ interface Button {
   title: string
 }
 
-const img = ref<string[]>([ Nuxt1, vuetify, typescript, supabase ])
+const img = ref<string[]>([ nuxt, vuetify, typescript, supabase ])
 
 const buttons = ref<Button[]>([
   {to: 'https://github.com/devrb2202', color: 'green', style: 'outlined', icon: 'mdi-github', title: 'Github'},
