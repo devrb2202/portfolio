@@ -72,14 +72,14 @@
 </template>
 
 <script setup lang="ts">
-import gpt from '/assets/images/gpt.png'
-import vuetify from '/assets/images/vuetify.png'
-import typescript from '/assets/images/typescript.png'
-import supabase from '/assets/images/supabase.png'
-import Nuxt1 from '/assets/images/Nuxt1.png'
+import Nuxt1 from '@/assets/images/Nuxt1.png'
+import gpt from '@/assets/images/gpt.png'
+import vuetify from '@/assets/images/vuetify.png'
+import typescript from '@/assets/images/typescript.png'
+import supabase from '@/assets/images/supabase.png'
 
 
-interface Button {
+interface Button {  
   to: string,
   color: string,
   style: "flat" | "outlined" | "text" | "elevated" | "tonal" | "plain" 
