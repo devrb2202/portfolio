@@ -1,14 +1,7 @@
 <template>
     <v-app>
-        <v-main>
-            <!-- <v-parallax
-                height="800"
-             src="/test.png"
-        
-            > -->
-                <slot></slot>
-            <!-- </v-parallax> -->
-        
+        <v-main class="bg-grey-darken-4">
+            <slot></slot>
         </v-main>
     </v-app>
 </template>

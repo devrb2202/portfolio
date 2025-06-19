@@ -4,15 +4,8 @@
   </NuxtLayout>
 </template>
 
-<style>
-body {
-  font-family: 'Inter', sans-serif;
-}
+
+<style scoped>
 
 
 </style>
-
-<script setup lang="ts">
-
-
-</script>
