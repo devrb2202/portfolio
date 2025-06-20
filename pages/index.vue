@@ -44,19 +44,21 @@ useHead({
   link: [
     { rel: 'canonical', href: 'https://rmlbrcs.vercel.app' }
   ],
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Ramil Bercasio",
-        "url": "https://rmlbrcs.vercel.app",
-        "jobTitle": "Frontend Developer",
-        "skills": "Nuxt 3, Vuetify, Supabase"
-      })
-    }
-  ]
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Computer Engineer",  // Or "CreativeWork" for projects
+      "name": "Ramil Bercasio",
+      "url": "https://mfbrcs.wired.app/",
+      "jobTitle": "Frontend Developer",
+      "skills": ["Nuxt 3", "Vuetify", "Supabase"],
+      "sameAs": [
+        "https://github.com/devrb22",
+        "https://linkedin.com/in/yourprofile"
+      ]
+    })
+  }]
 })
 
 
